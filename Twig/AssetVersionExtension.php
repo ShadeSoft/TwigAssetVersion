@@ -18,7 +18,7 @@ class AssetVersionExtension extends \Twig_Extension {
      * @return string
      */
     public function getAssetVersion($asset) {
-        return $asset . '?=' . substr(
+        return $asset . '?v=' . substr(
             md5(
                 filemtime(
                     str_replace('//', '/', $_SERVER['DOCUMENT_ROOT'] . '/' . $asset)
