@@ -1,0 +1,21 @@
+{
+    "name": "shadesoft/twig-asset-version",
+    "description": "Twig extension for versioning assets.",
+    "keywords": ["twig", "asset", "version"],
+    "type": "package",
+    "license": "MIT",
+    "homepage": "https://github.com/ShadeSoft/TwigAssetVersion",
+    "authors": [
+        {
+            "name": "Szabolcs Surányi",
+            "email": "szabolcs.suranyi@shadesoft.hu",
+            "homepage": "http://shadesoft.hu"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "ShadeSoft\\": "" }
+    },
+    "require": {
+        "twig/twig": "~1.0|~2.0"
+    }
+}
