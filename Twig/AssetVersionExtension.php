@@ -9,7 +9,7 @@ class AssetVersionExtension extends \Twig\Extension\AbstractExtension {
      */
     public function getFilters() {
         return array(
-            new \Twig\TwigFilter('versionify', function getAssetVersion($asset) {
+            new \Twig\TwigFilter('versionify', function($asset) {
                 return $asset . '?v=' . substr(
                     md5(
                         filemtime(
